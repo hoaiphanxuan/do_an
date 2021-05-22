@@ -141,10 +141,12 @@
   <ItemGroup>
     <ClCompile Include="log_in.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="show_inf_and_account.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />
     <ClInclude Include="log_in.h" />
+    <ClInclude Include="show_inf_and_account.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="nhan_vien.txt" />

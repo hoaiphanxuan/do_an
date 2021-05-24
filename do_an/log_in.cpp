@@ -152,5 +152,6 @@ void log_in_success(int luachon,char* ten)
 	//if (luachon == 3)
 		//function(luachon);
 	/////////testttttttttttttttttttttttttt
+	//// ahihihihihih
 }
 

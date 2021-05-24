@@ -149,6 +149,7 @@ void log_in_success(int luachon,char* ten)
 		show_inf(luachon,ten);
 	if (n == 2)
 		account(luachon,ten);
-	//if (luachon == 3)
+	//if (n == 3)
 		//function(luachon);
+	//sdfsfsd
 }

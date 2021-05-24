@@ -151,4 +151,6 @@ void log_in_success(int luachon,char* ten)
 		account(luachon,ten);
 	//if (luachon == 3)
 		//function(luachon);
+	/////////testttttttttttttttttttttttttt
 }
+

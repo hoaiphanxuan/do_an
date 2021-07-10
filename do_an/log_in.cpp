@@ -130,13 +130,43 @@ void log_in()
 	}
 	
 }
+struct gv {
+	char id;
+	char ten;
+	char ho;
+	char gioitinh;
+};
+struct sv {
+	int no;
+	char mssv;
+	char ten;
+	char ho;
+	char gioitinh;
+	sv* next;
+
+};
+struct monhoc {
+	sv* head;
+	gv giaovien;
+	char ten[50];
+	char thoigian;
+	char ngay;
+	monhoc* next;
+};
+struct hocki {
+	monhoc* head;
+
+};
+struct namhoc {
+	hocki* hk;
+};
 void log_in_success(int luachon,char* ten)
 {
 	system("cls");
 	cout << "MENU CHINH" << endl;
 	cout << "1.Xem thong tin" << endl;
 	cout << "2.Tai khoan" << endl;
-	cout << "3.Chuc nang" << endl;
+	cout << "3.tao nam hoc" << endl;
 	cout << "Nhap lua chon:";
 	int n=0;
 	while (n < 1 || n>3)
@@ -151,6 +181,7 @@ void log_in_success(int luachon,char* ten)
 		account(luachon,ten);
 	if (n == 3)
 	{
+
 		chucNangNv(luachon);
 	}
 }

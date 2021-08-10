@@ -37,19 +37,25 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="sinh_vien.txt">
+    <Text Include="2012-2013.txt">
       <Filter>Header Files</Filter>
     </Text>
+    <Text Include="danhsachnamhoc.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
     <Text Include="nhan_vien.txt">
-      <Filter>Header Files</Filter>
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="sinh_vien.txt">
+      <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>
   <ItemGroup>
     <None Include="thong_tin_sv.csv">
-      <Filter>Header Files</Filter>
+      <Filter>Resource Files</Filter>
     </None>
     <None Include="thong_tin_nv.csv">
-      <Filter>Header Files</Filter>
+      <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>
 </Project>

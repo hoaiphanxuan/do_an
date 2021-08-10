@@ -149,7 +149,72 @@ void log_in_success(int luachon,char* ten)
 		show_inf(luachon,ten);
 	if (n == 2)
 		account(luachon,ten);
-	//if (n == 3)
-		//function(luachon);
-	//sdfsfsd
+	if (n == 3)
+	{
+		chucNangNv(luachon);
+	}
+}
+
+void chucNangNv(int luachon)
+{
+	cout << "1.Tao nam hoc moi" << endl;
+	taoNamHoc();
+
+}
+void taoNamHoc()
+{
+	int thang, nam;
+	timeNow(thang, nam);
+	if (thang != 8)
+		cout << "Khong phai thoi gian de tao nam hoc moi" << endl;
+	else {
+		FILE* f1 = fopen("danhsachnamhoc.txt", "w+");
+		int co = 1;
+		if (f1 != NULL)
+		{
+			int namhocTruoc;
+			while (!feof(f1))
+			{
+				fscanf(f1, "%d\n", &namhocTruoc);
+				if (namhocTruoc == nam)
+				{
+					co = 0;
+					break;
+				}
+				if (feof(f1))
+					break;
+			}
+		}
+		if (co == 0)
+		{
+			cout << "NAM HOC MOI DA DUOC TAO TRUOC DAY" << endl;
+			return;
+		}
+		char* namhoc = new char[10];
+		itoa(nam, namhoc,10);
+		FILE* f = fopen((char*)namhoc, "w");
+		if (f != NULL)
+		{
+			cout << "Nhap so luong lop cua sinh vien nam 1:" << endl;
+			int num;
+			cin >> num;
+			fprintf(f, "%d\n", num);
+			cout << "Nhap ten cac lop:" << endl;
+			char* nameClass = new char[100];
+			for (int i = 0; i < num; i++)
+			{
+				cout << i+1 <<".";
+				cin.ignore();
+				cin.getline(nameClass, 100);
+				fprintf(f, "%s\n", nameClass);
+			}
+		}
+	}
+ }
+void timeNow(int& thang,int& nam)
+{
+	time_t now = time(0);
+	tm* ltm = localtime(&now);
+	nam= 1900 + ltm->tm_year ;
+	thang= 1 + ltm->tm_mon ;
 }

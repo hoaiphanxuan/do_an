@@ -49,6 +49,15 @@
     <Text Include="sinh_vien.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="2021.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="2020.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="danhsachhockynam2021.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <None Include="thong_tin_sv.csv">

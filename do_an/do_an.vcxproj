@@ -150,6 +150,9 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="2012-2013.txt" />
+    <Text Include="2020.txt" />
+    <Text Include="2021.txt" />
+    <Text Include="danhsachhockynam2021.txt" />
     <Text Include="danhsachnamhoc.txt" />
     <Text Include="nhan_vien.txt" />
     <Text Include="sinh_vien.txt" />
